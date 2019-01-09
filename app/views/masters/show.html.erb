@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @master.code %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @master.name %>
+</p>
+
+<p>
+  <strong>Chi name:</strong>
+  <%= @master.chi_name %>
+</p>
+
+<p>
+  <strong>Parent:</strong>
+  <%= @master.parent_id %>
+</p>
+
+<%= link_to 'Edit', edit_master_path(@master) %> |
+<%= link_to 'Back', masters_path %>

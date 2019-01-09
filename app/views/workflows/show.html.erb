@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Work:</strong>
+  <%= @workflow.work_id %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @workflow.location %>
+</p>
+
+<p>
+  <strong>Incharge user:</strong>
+  <%= @workflow.incharge_user_id %>
+</p>
+
+<%= link_to 'Edit', edit_workflow_path(@workflow) %> |
+<%= link_to 'Back', workflows_path %>

@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :workflows
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+  resources :locations
+  resources :masters
   devise_for :users
 
   resources :chatrooms do
