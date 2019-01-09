@@ -1,5 +1,16 @@
-<h1>New Chatroom</h1>
+<div class="fluid-container" style="margin-top: 10px">
+  <div class="row">
+    <div class="col-sm-3">
+      <%= render 'chatrooms/sidebar' %>
+    </div>
 
-<%= render 'form', chatroom: @chatroom %>
+    <div class="col-sm-9">
+      <h1>New Chatroom</h1>
 
-<%= link_to 'Back', chatrooms_path %>
+      <%= render 'form', chatroom: @chatroom %>
+
+      <%= link_to 'Back', chatrooms_path %>
+    </div>
+
+  </div>
+</div>
