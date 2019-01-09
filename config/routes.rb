@@ -8,5 +8,7 @@ Rails.application.routes.draw do
 
   resources :direct_messages
 
+  get '/privacy', to: 'home#privacy'
+  get '/terms', to: 'home#terms'
   root to: "chatrooms#index"
 end

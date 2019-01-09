@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
@@ -46,7 +48,14 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
+gem 'bootstrap', '~> 4.1', '>= 4.1.1'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'bootsnap', require: false
+gem 'data-confirm-modal', '~> 1.6', '>= 1.6.2'
+gem 'devise-bootstrapped', github: 'excid3/devise-bootstrapped', branch: 'bootstrap4'
+gem 'devise_masquerade', '~> 0.6.2'
+gem 'gravatar_image_tag', github: 'mdeering/gravatar_image_tag'
+gem 'font-awesome-sass', '~> 5.5', '>= 5.5.0.1'
+gem 'local_time', '~> 2.0', '>= 2.0.1'
+gem 'toastr-rails'

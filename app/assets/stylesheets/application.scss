@@ -13,9 +13,11 @@
  *= require_tree .
  *= require_self
  */
-
+@import "font-awesome-sprockets";
+@import "font-awesome";
 @import "bootstrap";
-@import "bootstrap-sprockets";
+@import "sticky-footer";
+@import "toastr";
 
 .strike {
   display: block;
