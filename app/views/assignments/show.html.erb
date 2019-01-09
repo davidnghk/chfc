@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Work:</strong>
+  <%= @assignment.work_id %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @assignment.location %>
+</p>
+
+<p>
+  <strong>Headline:</strong>
+  <%= @assignment.headline %>
+</p>
+
+<p>
+  <strong>Start datetime:</strong>
+  <%= @assignment.start_datetime %>
+</p>
+
+<p>
+  <strong>Due datetime:</strong>
+  <%= @assignment.due_datetime %>
+</p>
+
+<p>
+  <strong>End datetime:</strong>
+  <%= @assignment.end_datetime %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @assignment.status %>
+</p>
+
+<p>
+  <strong>Incharge user:</strong>
+  <%= @assignment.incharge_user_id %>
+</p>
+
+<p>
+  <strong>Worker user:</strong>
+  <%= @assignment.worker_user_id %>
+</p>
+
+<%= link_to 'Edit', edit_assignment_path(@assignment) %> |
+<%= link_to 'Back', assignments_path %>

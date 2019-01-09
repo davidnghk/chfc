@@ -12,6 +12,7 @@
 //
 //= require rails-ujs
 //= require jquery
+//= require toastr
 //= require jquery_ujs
 //= require data-confirm-modal
 //= require local-time

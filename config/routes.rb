@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :assignments
   resources :workflows
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
@@ -15,5 +16,6 @@ Rails.application.routes.draw do
 
   get '/privacy', to: 'home#privacy'
   get '/terms', to: 'home#terms'
-  root to: "chatrooms#index"
+  # root to: "chatrooms#index"
+  root to: 'home#index'
 end
